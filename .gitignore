@@ -1,11 +1,27 @@
-# Ignore build and IDE files
+# Ignore build results
 bin/
 obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Rider and JetBrains IDE settings
+.idea/
 .vs/
 
-# Ignore project files if you really want to
-!Snake.csproj
+# Ignore test results and logs
+TestResult*/
+*.log
 
-# But keep these
-!.gitignore
-!README.md
+# Ignore temporary files
+*.tmp
+*.cache
+*.bak
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+packages/
