@@ -1,13 +1,11 @@
-# Ignore everything
-*
-
-# But not these files
-!.gitignore
-!README.md
-
-# Ignore build and cache directories
-obj/
+# Ignore build and IDE files
 bin/
+obj/
 .vs/
+
+# Ignore project files if you really want to
 Snake.csproj
 
+# But keep these
+!.gitignore
+!README.md
