@@ -10,13 +10,12 @@ namespace Snake
             Console.WriteLine("        Snake and Ladder Game         ");
             Console.WriteLine("======================================\n");
 
-            Console.WriteLine("UC2: Player rolls the die (1–6) using Random\n");
+            Console.WriteLine("UC3: Player checks for Option (No Play, Ladder, Snake)\n");
 
-            // Step 1: Create a 10x10 board
+            // Step 1: Create 10x10 Board
             int[,] board = new int[10, 10];
             int num = 100;
 
-            // Fill the board with numbers from 100 to 1
             for (int i = 0; i < 10; i++)
             {
                 for (int j = 0; j < 10; j++)
@@ -25,25 +24,38 @@ namespace Snake
                 }
             }
 
-            // Step 2: Show the board (optional, for visualization)
-            Console.WriteLine("Board Layout:\n");
-            for (int i = 0; i < 10; i++)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    Console.Write(board[i, j].ToString("D2") + "\t");
-                }
-                Console.WriteLine();
-            }
-
-            // Step 3: Initialize player position
+            // Step 2: Initialize player
             int playerPosition = 0;
-            Console.WriteLine($"\nPlayer starts at position: {playerPosition}");
+            Console.WriteLine($"Player starts at position: {playerPosition}\n");
 
-            // Step 4: Roll the die
+            // Step 3: Create random generator
             Random random = new Random();
-            int diceRoll = random.Next(1, 7); // 1 to 6 inclusive
-            Console.WriteLine($"Player rolled the die and got: {diceRoll}");
+
+            // Step 4: Roll die
+            int diceRoll = random.Next(1, 7); // 1 to 6
+            Console.WriteLine($"Dice rolled: {diceRoll}");
+
+            // Step 5: Determine option (0: No Play, 1: Ladder, 2: Snake)
+            int option = random.Next(0, 3);
+
+            switch (option)
+            {
+                case 0: // No Play
+                    Console.WriteLine("Option: No Play — Player stays in the same position.");
+                    break;
+
+                case 1: // Ladder
+                    playerPosition += diceRoll;
+                    Console.WriteLine($"Option: Ladder! Player climbs ahead by {diceRoll} → New Position: {playerPosition}");
+                    break;
+
+                case 2: // Snake
+                    playerPosition -= diceRoll;
+                    if (playerPosition < 0)
+                        playerPosition = 0;
+                    Console.WriteLine($"Option: Snake! Player slides down by {diceRoll} → New Position: {playerPosition}");
+                    break;
+            }
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
