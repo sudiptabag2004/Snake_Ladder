@@ -10,12 +10,11 @@ namespace Snake
             Console.WriteLine("        Snake and Ladder Game         ");
             Console.WriteLine("======================================\n");
 
-            Console.WriteLine("UC3: Player checks for Option (No Play, Ladder, Snake)\n");
+            Console.WriteLine("UC4: Repeat till the Player reaches the winning position 100\n");
 
-            // Step 1: Create 10x10 Board
+            // Step 1: Create 10x10 board
             int[,] board = new int[10, 10];
             int num = 100;
-
             for (int i = 0; i < 10; i++)
             {
                 for (int j = 0; j < 10; j++)
@@ -26,38 +25,41 @@ namespace Snake
 
             // Step 2: Initialize player
             int playerPosition = 0;
-            Console.WriteLine($"Player starts at position: {playerPosition}\n");
-
-            // Step 3: Create random generator
             Random random = new Random();
 
-            // Step 4: Roll die
-            int diceRoll = random.Next(1, 7); // 1 to 6
-            Console.WriteLine($"Dice rolled: {diceRoll}");
+            Console.WriteLine($"Starting position: {playerPosition}\n");
 
-            // Step 5: Determine option (0: No Play, 1: Ladder, 2: Snake)
-            int option = random.Next(0, 3);
-
-            switch (option)
+            // Step 3: Game loop
+            while (playerPosition < 100)
             {
-                case 0: // No Play
-                    Console.WriteLine("Option: No Play — Player stays in the same position.");
-                    break;
+                int diceRoll = random.Next(1, 7); // 1 to 6
+                int option = random.Next(0, 3);   // 0 = No Play, 1 = Ladder, 2 = Snake
 
-                case 1: // Ladder
-                    playerPosition += diceRoll;
-                    Console.WriteLine($"Option: Ladder! Player climbs ahead by {diceRoll} → New Position: {playerPosition}");
-                    break;
+                switch (option)
+                {
+                    case 0: // No Play
+                        Console.WriteLine($"No Play. Player stays at position {playerPosition}");
+                        break;
 
-                case 2: // Snake
-                    playerPosition -= diceRoll;
-                    if (playerPosition < 0)
-                        playerPosition = 0;
-                    Console.WriteLine($"Option: Snake! Player slides down by {diceRoll} → New Position: {playerPosition}");
-                    break;
+                    case 1: // Ladder
+                        playerPosition += diceRoll;
+                        Console.WriteLine($"Ladder! Player climbs ahead by {diceRoll} → Position: {playerPosition}");
+                        break;
+
+                    case 2: // Snake
+                        playerPosition -= diceRoll;
+                        if (playerPosition < 0)
+                            playerPosition = 0;
+                        Console.WriteLine($"Snake! Player slides down by {diceRoll} → Position: {playerPosition}");
+                        break;
+                }
+
+                Console.WriteLine("--------------------------------------");
             }
 
-            Console.WriteLine("\nPress any key to exit...");
+            // Step 4: Player wins
+            Console.WriteLine("\n Player reached 100 and won the game!");
+            Console.WriteLine("======================================");
             Console.ReadKey();
         }
     }
