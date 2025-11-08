@@ -1,6 +1,12 @@
-
-!README.md
-!.gitignore
+# Ignore everything
 *
-/obj
-Snake.csproj
+
+# But not these files
+!.gitignore
+!README.md
+!Snake.csproj
+
+# Ignore build and cache directories
+obj/
+bin/
+.vs/
