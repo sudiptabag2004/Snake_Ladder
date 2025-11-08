@@ -1,0 +1,15 @@
+/Users/sudiptabag/RiderProjects/Snake/Snake/bin/Debug/net9.0/Snake
+/Users/sudiptabag/RiderProjects/Snake/Snake/bin/Debug/net9.0/Snake.deps.json
+/Users/sudiptabag/RiderProjects/Snake/Snake/bin/Debug/net9.0/Snake.runtimeconfig.json
+/Users/sudiptabag/RiderProjects/Snake/Snake/bin/Debug/net9.0/Snake.dll
+/Users/sudiptabag/RiderProjects/Snake/Snake/bin/Debug/net9.0/Snake.pdb
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.AssemblyInfoInputs.cache
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.AssemblyInfo.cs
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.csproj.CoreCompileInputs.cache
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.sourcelink.json
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.dll
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/refint/Snake.dll
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.pdb
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.genruntimeconfig.cache
+/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/ref/Snake.dll
