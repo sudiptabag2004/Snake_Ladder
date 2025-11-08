@@ -4,7 +4,7 @@ obj/
 .vs/
 
 # Ignore project files if you really want to
-Snake.csproj
+!Snake.csproj
 
 # But keep these
 !.gitignore
