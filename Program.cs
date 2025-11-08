@@ -1,43 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace SnakeAndLadder
+namespace Snake
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Snake and Ladder Game!");
-            Console.WriteLine("UC1: Game played with single player at start position 0");
+            Console.WriteLine("======================================");
+            Console.WriteLine("     Welcome to Snake and Ladder!     ");
+            Console.WriteLine("======================================\n");
 
-            // Create a 10x10 board using a 2D array
-            int[,] board = new int[10, 10];
-            
-            // Initialize board with numbers (1 to 100)
-            int num = 100;
-            for (int i = 0; i < 10; i++)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    board[i, j] = num--;
-                }
-            }
+            Console.WriteLine("UC1: Game played with single player at start position 0\n");
 
-            // Display board (optional visualization)
-            Console.WriteLine("\nBoard Layout:");
-            for (int i = 0; i < 10; i++)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    Console.Write(board[i, j].ToString("D2") + "\t");
-                }
-                Console.WriteLine();
-            }
-
-            // Single player starting position
+            // Initialize player position
             int playerPosition = 0;
-            Console.WriteLine($"\nPlayer starts at position: {playerPosition}");
 
+            // Display starting position
+            Console.WriteLine($"Player starts the game at position: {playerPosition}");
+
+            Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
     }
