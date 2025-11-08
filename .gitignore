@@ -1,0 +1,27 @@
+# Ignore build results
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Rider and JetBrains IDE settings
+.idea/
+.vs/
+
+# Ignore test results and logs
+TestResult*/
+*.log
+
+# Ignore temporary files
+*.tmp
+*.cache
+*.bak
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+packages/

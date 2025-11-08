@@ -1,5 +1,0 @@
-/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.GeneratedMSBuildEditorConfig.editorconfig
-/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.AssemblyInfoInputs.cache
-/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.AssemblyInfo.cs
-/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.csproj.CoreCompileInputs.cache
-/Users/sudiptabag/RiderProjects/Snake/Snake/obj/Debug/net9.0/Snake.sourcelink.json
